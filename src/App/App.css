@@ -21,11 +21,11 @@ span {
 }
 button {
   padding: 5px;
-  background: #31f188;
+  background: #87f5b8;
 }
 button:hover {
   padding: 5px;
-  background: #31f188;
+  background: #87f5b8;
 }
 .btn {
   width: 100px;
@@ -35,5 +35,5 @@ form {
 }
 h1 {
   text-align: center;
-  background: #4cfae8;
+  background: #87f5b8;
 }
