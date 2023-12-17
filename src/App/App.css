@@ -1,0 +1,39 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 75px;
+  background: #c9fac7;
+  overflow: hidden;
+}
+.container {
+  background: #c9fac7;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 5px;
+}
+span {
+  margin-left: 5px;
+}
+button {
+  padding: 5px;
+  background: #31f188;
+}
+button:hover {
+  padding: 5px;
+  background: #31f188;
+}
+.btn {
+  width: 100px;
+}
+form {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  background: #4cfae8;
+}
