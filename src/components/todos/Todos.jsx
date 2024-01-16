@@ -1,6 +1,7 @@
 import React, { useEffect, useReducer, useState } from "react";
-import Todo from "./Todo";
-import { getData } from "../Utils/Utils";
+import Todo from "../todo/Todo";
+import { getData } from "../../Utils/Utils";
+import './todos.css'
 
 const initialState = getData();
 
@@ -41,15 +42,20 @@ const Todos = () => {
 
   return (
     <div className="container">
-      <h1>Task Management</h1>
-      <form onSubmit={handleSubmit}>
+      
+      <fieldset>
+        <legend>Task Management</legend>
+        <form onSubmit={handleSubmit}>
+          <div className="taskField">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           type="text"
         />
-        <button>Add Task</button>
-      </form>
+            <button>Add Task</button>
+            </div>
+        </form>
+        </fieldset>
       <div>
         {state.map((todo) => (
           <Todo

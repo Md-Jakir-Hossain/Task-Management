@@ -1,0 +1,24 @@
+.container {
+    background: #c9fac7;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 1rem;
+    & fieldset{
+        border-radius: 5px;
+    }
+}
+.taskField{
+    max-width: 20rem;
+    background: #979595;
+    & input{
+        width: 70%;
+        border: none;
+        padding: .5rem;
+    }
+    & button{
+        width: 25%;
+        padding: .5rem;
+        border:none ;
+    }
+}

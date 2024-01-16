@@ -1,0 +1,13 @@
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 75px;
+    background: #c9fac7;
+    overflow: hidden;
+}
+.btn {
+    width: 100px;
+    text-align: right;
+}

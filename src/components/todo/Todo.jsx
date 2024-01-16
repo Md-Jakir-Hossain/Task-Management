@@ -3,6 +3,7 @@ import { MdDelete } from "react-icons/md";
 import { FiEdit } from "react-icons/fi";
 import { GrUpdate } from "react-icons/gr";
 import { GrCompliance } from "react-icons/gr";
+import './todo.css'
 
 const Todo = ({ todo, deleteItem, dispatch }) => {
   const { id, text, completed } = todo;
