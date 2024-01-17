@@ -3,11 +3,17 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 5px 75px;
     background: #c9fac7;
     overflow: hidden;
 }
+
 .btn {
-    width: 100px;
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+p{
+    word-break: break-all;
 }

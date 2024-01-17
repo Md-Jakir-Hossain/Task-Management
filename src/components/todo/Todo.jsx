@@ -24,7 +24,7 @@ const Todo = ({ todo, deleteItem, dispatch }) => {
   return (
     <div className="task">
       <div>
-        <GrCompliance onClick={completedTask} />
+        <GrCompliance onClick={completedTask} fontSize={'1.5rem'}/>
       </div>
       {isComplete ? (
         <s>
