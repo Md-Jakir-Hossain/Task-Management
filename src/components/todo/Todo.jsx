@@ -23,8 +23,8 @@ const Todo = ({ todo, deleteItem, dispatch }) => {
 
   return (
     <div className="task">
-      <div>
-        <GrCompliance onClick={completedTask} fontSize={'1.5rem'}/>
+      <div className="btn">
+        <GrCompliance onClick={completedTask} title="complete"/>
       </div>
       {isComplete ? (
         <s>
@@ -55,9 +55,9 @@ const Todo = ({ todo, deleteItem, dispatch }) => {
       )}
 
       <div className="btn">
-        <span onClick={handleEdit}>{isEdit ? <GrUpdate /> : <FiEdit />}</span>
-        <span onClick={() => deleteItem(id)}>
-          <MdDelete color="red" width={100} />
+        <span onClick={handleEdit}>{isEdit ? <GrUpdate title="update"/> : <FiEdit title="edit"/>}</span>
+        <span title="delete" onClick={() => deleteItem(id)}>
+          <MdDelete color="red"/>
         </span>
       </div>
     </div>

@@ -52,7 +52,7 @@ const Todos = () => {
           onChange={(e) => setInput(e.target.value)}
           type="text"
         />
-            <button>Add Task</button>
+            <button className="addBtn">Add Task</button>
             </div>
         </form>
         </fieldset>

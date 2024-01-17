@@ -1,28 +1,6 @@
 
 
 
-/* input {
-  padding: 5px;
+button{
+  cursor: pointer;
 }
-span {
-  margin-left: 5px;
-}
-button {
-  padding: 5px;
-  background: #87f5b8;
-}
-button:hover {
-  padding: 5px;
-  background: #87f5b8;
-}
-
-form {
-  text-align: center;
-}
-h1 {
-  text-align: center;
-  background: #87f5b8;
-}
-p {
-  word-break: break-all;
-} */
