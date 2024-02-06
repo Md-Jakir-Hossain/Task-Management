@@ -50,7 +50,8 @@ const Todos = () => {
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          type="text"
+              type="text"
+              placeholder="Input here"
         />
             <button className="addBtn">Add Task</button>
             </div>
