@@ -8,6 +8,9 @@
         border-radius: 5px;
         display: flex;
         justify-content: center;
+        & legend {
+            font-weight: bold;
+        }
         & .taskField{
             width: max-content;
             background: #f7f6f6;
