@@ -1,23 +1,10 @@
 import React, { useEffect, useReducer, useState } from "react";
 import Todo from "../todo/Todo";
 import { getData } from "../../Utils/Utils";
+import {reducer} from "../../Utils/reducer"
 import './todos.css'
 
 const initialState = getData();
-
-const reducer = (state, action) => {
-  const { type, payload } = action;
-  switch (type) {
-    case "ADD_TASK":
-      return [...state, { id: Date.now(), text: payload, completed: false }];
-    case "DELETE_TASK":
-      return state.filter((todo) => todo.id !== payload);
-    case "EDIT_TASK":
-      return state.map((todo) =>
-        todo.id === payload.id ? { ...todo, text: payload.update } : todo
-      );
-  }
-};
 
 const Todos = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
