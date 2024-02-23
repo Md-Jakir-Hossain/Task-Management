@@ -5,7 +5,7 @@ import { GrUpdate } from "react-icons/gr";
 import { GrCompliance } from "react-icons/gr";
 import './todo.css'
 
-const Todo = ({ todo, deleteItem, dispatch }) => {
+const Todo = ({ todo, deleteTask, dispatch }) => {
   const { id, text, completed } = todo;
   const [isEdit, setIsEdit] = useState(false);
   const [update, setUpdate] = useState(text);
@@ -56,7 +56,7 @@ const Todo = ({ todo, deleteItem, dispatch }) => {
 
       <div className="btn">
         <span onClick={handleEdit}>{isEdit ? <GrUpdate title="update"/> : <FiEdit title="edit"/>}</span>
-        <span title="delete" onClick={() => deleteItem(id)}>
+        <span title="delete" onClick={() => deleteTask(id)}>
           <MdDelete color="red"/>
         </span>
       </div>

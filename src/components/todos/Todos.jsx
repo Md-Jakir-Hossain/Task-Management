@@ -33,7 +33,7 @@ const Todos = () => {
     }
   };
 
-  const deleteItem = (id) => {
+  const deleteTask = (id) => {
     dispatch({ type: "DELETE_TASK", payload: id });
   };
   useEffect(() => {
@@ -62,7 +62,7 @@ const Todos = () => {
           <Todo
             key={todo.id}
             todo={todo}
-            deleteItem={deleteItem}
+            deleteTask={deleteTask}
             dispatch={dispatch}
           />
         ))}
